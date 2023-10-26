@@ -205,3 +205,51 @@ footer {
     background-color: #002;
 }
 /* End Footer */
+
+
+
+/* Responsive */
+@media screen and (max-width: 844px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    main {
+        background-position: left;
+        background-size: 300%;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header div img {
+        margin: 0 10px 0;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .message {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    section .satu {
+        padding: 0;
+        flex: 1;
+        color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section .dua {
+        justify-content: center;
+    }
+
+    footer{
+        text-align: center;
+    }
+  }
