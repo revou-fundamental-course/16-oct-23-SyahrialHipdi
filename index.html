@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img src="Aguero.png" alt="">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#header">Our Profile</a></li>
+            <li><a href="#formed">Portfolio</a></li>
+            <li><a href="#footer">Message Us</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Hi <span id="pengguna">Your Name</span>, Selamat Datang di website Eseba</h1> <br>
+        <p>Kami merupakan sebuah perusahaan yang bergerak dibidang berita khusunya sepakbola, visi kami mengenalkan sepakbola kepada dunia dan misi kami yaitu menyampaikan berita sepakbola secara aktual dan faktual </p>
+    </main>
+    
+    <header id="header">
+        <h1>Our Headquarter</h1>
+
+        <div>
+            <img src="Jakarta.png" alt="">
+            <img src="Bandung.png" alt="">
+            <img src="Surabaya.png" alt="">
+        </div>
+    </header>
+    <h2 class="message">Message Us</h2>
+    <section id="formed">
+        
+        <div class="satu">
+            <table>
+                <form action="" name="formulir" id="formulir" onsubmit="return validateForm()">
+                    <tr>
+                        <td><label for="nama" class="kiri" >Nama </label>:</td>
+                        <td><input type="text" class="left" required id="nama" name="nama"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="lahir" class="kiri" >Tanggal Lahir </label>:</td>
+                        <td><input type="date" class="left" required id="lahir" name="lahir"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="gender" class="kiri">jenis kelamin </label>: </td>
+                        
+                        <td><input type="radio" id="laki-laki" name="gender" value="Laki-laki" required>
+                            <label for="laki-laki">Laki-laki</label>
+                            <input type="radio" id="perempuan" name="gender" value="perempuan" required>
+                            <label for="perempuan">perempuan</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="pesan" class="kiri" >pesan</label>:</td>
+                        <td><textarea id="pesan" name="pesan" class="left" cols="100" rows="10" required></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><button>Submit</button></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+
+        <div class="dua">
+            <div>
+                <p>Current Time : <span id="sender-waktu"></span></p><br><br><br>  
+                <p>Nama : <span id="sender-nama"></span></p><br><br>
+                <p>Tanggal Lahir : <span id="sender-lahir"></span></p><br><br>
+                <p>Jenis Kelamin : <span id="sender-gender"></span></p><br><br>
+                <p>Pesan : <span id="sender-pesan"></span></p><br><br>
+            </div>
+            
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <p>Created by Syahrial Hipdi</p>
+    </footer>
+    
+<script src="js/script.js"></script>
+
+</body>
+</html>    
